@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" viewBox="0 0 680 420" role="img" xmlns="http://www.w3.org/2000/svg"><title>Los 5 datos clave de la hidroponía</title>
+
+<text x="340" y="35" font-family="serif" font-size="17" fill="#1A1A1A" text-anchor="middle" font-weight="500">5 datos que cambian cómo ves la hidroponía</text>
+
+<g>
+<rect x="40" y="65" width="290" height="105" rx="10" fill="#F5F1E8" stroke="#2D5F3F" stroke-width="0.5"/>
+<g transform="translate(60, 90)">
+<rect x="0" y="0" width="58" height="58" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<line x1="0" y1="29" x2="58" y2="29" stroke="#854F0B" stroke-width="0.4" stroke-dasharray="2 2"/>
+<line x1="29" y1="0" x2="29" y2="58" stroke="#854F0B" stroke-width="0.4" stroke-dasharray="2 2"/>
+<path d="M 8 24 Q 14 18 18 22 Q 22 16 26 22" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.5"/>
+<path d="M 32 12 Q 40 4 50 8 Q 56 18 50 28 Q 42 22 38 28 Q 34 22 32 12 M 32 32 Q 40 24 50 28 Q 56 38 50 48 Q 42 42 38 48 Q 34 42 32 32" fill="#97C459" stroke="#2D5F3F" stroke-width="0.5"/>
+<text x="14" y="50" font-family="sans-serif" font-size="6" fill="#854F0B" text-anchor="middle">2 kg</text>
+<text x="44" y="55" font-family="sans-serif" font-size="6" fill="#854F0B" text-anchor="middle">20 kg</text>
+</g>
+<text x="240" y="100" font-family="serif" font-size="36" fill="#2D5F3F" text-anchor="middle" font-weight="500">10x</text>
+<text x="220" y="135" font-family="sans-serif" font-size="13" fill="#1A1A1A" text-anchor="middle" font-weight="500">más producción por m²</text>
+<text x="220" y="153" font-family="sans-serif" font-size="11" fill="#5F5E5A" text-anchor="middle">2 kg en tierra → 20 kg en hidroponía</text>
+</g>
+
+<g>
+<rect x="350" y="65" width="290" height="105" rx="10" fill="#F5F1E8" stroke="#7BA05B" stroke-width="0.5"/>
+<g transform="translate(370, 88)">
+<line x1="0" y1="40" x2="60" y2="40" stroke="#888780" stroke-width="0.4"/>
+<rect x="2" y="20" width="6" height="20" fill="#FAC775" stroke="#854F0B" stroke-width="0.3"/>
+<rect x="14" y="10" width="6" height="30" fill="#FAC775" stroke="#854F0B" stroke-width="0.3"/>
+<rect x="26" y="2" width="6" height="38" fill="#FAC775" stroke="#854F0B" stroke-width="0.3"/>
+<text x="17" y="58" font-family="sans-serif" font-size="6" fill="#854F0B" text-anchor="middle">tierra · 75d</text>
+<rect x="38" y="22" width="6" height="18" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.3"/>
+<rect x="48" y="14" width="6" height="26" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.3"/>
+<text x="46" y="58" font-family="sans-serif" font-size="6" fill="#2D5F3F" text-anchor="middle">hidro · 40d</text>
+</g>
+<text x="540" y="100" font-family="serif" font-size="32" fill="#2D5F3F" text-anchor="middle" font-weight="500">30-50%</text>
+<text x="530" y="135" font-family="sans-serif" font-size="13" fill="#1A1A1A" text-anchor="middle" font-weight="500">crecimiento más rápido</text>
+<text x="530" y="153" font-family="sans-serif" font-size="11" fill="#5F5E5A" text-anchor="middle">75 días en tierra → 40 en hidroponía</text>
+</g>
+
+<g>
+<rect x="40" y="190" width="290" height="105" rx="10" fill="#F5F1E8" stroke="#C9A961" stroke-width="0.5"/>
+<g transform="translate(60, 215)">
+<rect x="0" y="0" width="32" height="58" rx="2" fill="#85B7EB" opacity="0.5" stroke="#0C447C" stroke-width="0.5"/>
+<text x="16" y="20" font-family="sans-serif" font-size="6" fill="#0C447C" text-anchor="middle">tierra</text>
+<text x="16" y="32" font-family="sans-serif" font-size="9" fill="#0C447C" text-anchor="middle" font-weight="500">250 L</text>
+<text x="16" y="48" font-family="sans-serif" font-size="5" fill="#0C447C" text-anchor="middle">por kg</text>
+<rect x="42" y="36" width="14" height="22" rx="2" fill="#85B7EB" opacity="0.7" stroke="#0C447C" stroke-width="0.5"/>
+<text x="49" y="48" font-family="sans-serif" font-size="5" fill="#0C447C" text-anchor="middle">hidro</text>
+<text x="49" y="55" font-family="sans-serif" font-size="6" fill="#0C447C" text-anchor="middle" font-weight="500">25 L</text>
+</g>
+<text x="240" y="225" font-family="serif" font-size="36" fill="#0C447C" text-anchor="middle" font-weight="500">90%</text>
+<text x="220" y="260" font-family="sans-serif" font-size="13" fill="#1A1A1A" text-anchor="middle" font-weight="500">menos agua</text>
+<text x="220" y="278" font-family="sans-serif" font-size="11" fill="#5F5E5A" text-anchor="middle">circuito cerrado, agua reutilizada</text>
+</g>
+
+<g>
+<rect x="350" y="190" width="290" height="105" rx="10" fill="#F5F1E8" stroke="#888780" stroke-width="0.5"/>
+<g transform="translate(370, 210)">
+<circle cx="20" cy="20" r="18" fill="#0A0A0A" stroke="#C9A961" stroke-width="0.5"/>
+<circle cx="14" cy="18" r="6" fill="#85B7EB" opacity="0.6"/>
+<circle cx="20" cy="20" r="2" fill="#F5F1E8"/>
+<g transform="translate(35, 12)">
+<rect x="0" y="0" width="3" height="14" fill="#C9A961" stroke="#854F0B" stroke-width="0.3"/>
+<path d="M 0 0 L -2 -3 L 5 -3 L 3 0 Z" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.3"/>
+<rect x="-3" y="14" width="9" height="3" fill="#888780"/>
+</g>
+</g>
+<text x="540" y="240" font-family="serif" font-size="22" fill="#1A1A1A" text-anchor="middle" font-weight="500">NASA, 1970</text>
+<text x="530" y="265" font-family="sans-serif" font-size="11" fill="#5F5E5A" text-anchor="middle">Cultivos hidropónicos</text>
+<text x="530" y="278" font-family="sans-serif" font-size="11" fill="#5F5E5A" text-anchor="middle">en el espacio desde hace décadas</text>
+</g>
+
+<g>
+<rect x="190" y="315" width="300" height="90" rx="10" fill="#EAF3DE" stroke="#2D5F3F" stroke-width="0.5"/>
+<g transform="translate(210, 335)">
+<rect x="0" y="10" width="22" height="40" rx="2" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.4"/>
+<path d="M 4 10 Q 0 -2 6 -8 Q 10 -10 14 -8 Q 20 -2 18 10 M 22 10 Q 22 0 18 -5" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.4"/>
+<path d="M 8 8 Q 6 0 9 -4" stroke="#2D5F3F" stroke-width="0.3" fill="none"/>
+<path d="M 14 8 Q 16 0 13 -4" stroke="#2D5F3F" stroke-width="0.3" fill="none"/>
+</g>
+<text x="350" y="357" font-family="serif" font-size="22" fill="#2D5F3F" font-weight="500" text-anchor="middle">$30-50 USD</text>
+<text x="340" y="378" font-family="sans-serif" font-size="13" fill="#1A1A1A" text-anchor="middle" font-weight="500">la libra de microgreens</text>
+<text x="340" y="395" font-family="sans-serif" font-size="11" fill="#5F5E5A" text-anchor="middle">cosechas en 14 días, mercado gourmet</text>
+</g>
+</svg>

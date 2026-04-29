@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" viewBox="0 0 680 460" role="img" xmlns="http://www.w3.org/2000/svg"><title>Mapa de los 5 sistemas hidropónicos</title>
+
+<text x="340" y="35" font-family="serif" font-size="17" fill="#1A1A1A" text-anchor="middle" font-weight="500">Los 5 sistemas que existen</text>
+<text x="340" y="55" font-family="sans-serif" font-size="11" fill="#5F5E5A" text-anchor="middle" font-style="italic">Las demás son variaciones de estos cinco</text>
+
+<g transform="translate(40, 80)">
+<rect x="0" y="0" width="190" height="160" rx="10" fill="#F5F1E8" stroke="#2D5F3F" stroke-width="0.5"/>
+<g transform="translate(40, 25)">
+<rect x="0" y="20" width="110" height="14" rx="7" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.4"/>
+<rect x="0" y="42" width="110" height="14" rx="7" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.4"/>
+<circle cx="22" cy="27" r="2.5" fill="#7BA05B"/>
+<circle cx="55" cy="27" r="2.5" fill="#7BA05B"/>
+<circle cx="88" cy="27" r="2.5" fill="#7BA05B"/>
+<circle cx="22" cy="49" r="2.5" fill="#7BA05B"/>
+<circle cx="55" cy="49" r="2.5" fill="#7BA05B"/>
+<circle cx="88" cy="49" r="2.5" fill="#7BA05B"/>
+<rect x="50" y="62" width="10" height="8" rx="1" fill="#444441"/>
+</g>
+<text x="95" y="125" font-family="serif" font-size="14" fill="#2D5F3F" text-anchor="middle" font-weight="500">NFT</text>
+<text x="95" y="142" font-family="sans-serif" font-size="10" fill="#5F5E5A" text-anchor="middle">Nutrient Film Technique</text>
+</g>
+
+<g transform="translate(245, 80)">
+<rect x="0" y="0" width="190" height="160" rx="10" fill="#F5F1E8" stroke="#7BA05B" stroke-width="0.5"/>
+<g transform="translate(35, 30)">
+<rect x="0" y="0" width="120" height="50" rx="3" fill="#1A1A1A" stroke="#5F5E5A" stroke-width="0.5"/>
+<rect x="0" y="0" width="120" height="8" rx="3" fill="#444441"/>
+<circle cx="20" cy="4" r="1.5" fill="#7BA05B"/>
+<circle cx="40" cy="4" r="1.5" fill="#7BA05B"/>
+<circle cx="60" cy="4" r="1.5" fill="#7BA05B"/>
+<circle cx="80" cy="4" r="1.5" fill="#7BA05B"/>
+<circle cx="100" cy="4" r="1.5" fill="#7BA05B"/>
+<rect x="2" y="10" width="116" height="36" fill="#85B7EB" opacity="0.4"/>
+<circle cx="20" cy="35" r="1" fill="#85B7EB" opacity="0.9"/>
+<circle cx="50" cy="38" r="1" fill="#85B7EB" opacity="0.9"/>
+<circle cx="70" cy="32" r="1" fill="#85B7EB" opacity="0.9"/>
+<circle cx="95" cy="40" r="1" fill="#85B7EB" opacity="0.9"/>
+</g>
+<text x="95" y="125" font-family="serif" font-size="14" fill="#2D5F3F" text-anchor="middle" font-weight="500">DWC</text>
+<text x="95" y="142" font-family="sans-serif" font-size="10" fill="#5F5E5A" text-anchor="middle">Deep Water Culture</text>
+</g>
+
+<g transform="translate(450, 80)">
+<rect x="0" y="0" width="190" height="160" rx="10" fill="#F5F1E8" stroke="#C9A961" stroke-width="0.5"/>
+<g transform="translate(45, 25)">
+<rect x="10" y="35" width="80" height="30" rx="3" fill="#854F0B" opacity="0.5" stroke="#5F5E5A" stroke-width="0.4"/>
+<g opacity="0.7">
+<circle cx="25" cy="48" r="2" fill="#FAC775"/>
+<circle cx="40" cy="55" r="2" fill="#FAC775"/>
+<circle cx="55" cy="48" r="2" fill="#FAC775"/>
+<circle cx="70" cy="55" r="2" fill="#FAC775"/>
+</g>
+<g transform="translate(40, 0)">
+<path d="M 12 32 Q 4 22 8 12 Q 12 8 16 12 Q 20 22 16 32 M 16 32 Q 24 22 20 12" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.4"/>
+</g>
+<g opacity="0.7">
+<line x1="35" y1="10" x2="35" y2="35" stroke="#85B7EB" stroke-width="0.5"/>
+<circle cx="35" cy="38" r="1" fill="#85B7EB"/>
+</g>
+</g>
+<text x="95" y="125" font-family="serif" font-size="14" fill="#2D5F3F" text-anchor="middle" font-weight="500">Sustrato</text>
+<text x="95" y="142" font-family="sans-serif" font-size="10" fill="#5F5E5A" text-anchor="middle">Drip / Goteo</text>
+</g>
+
+<g transform="translate(140, 260)">
+<rect x="0" y="0" width="190" height="160" rx="10" fill="#F5F1E8" stroke="#888780" stroke-width="0.5"/>
+<g transform="translate(70, 25)">
+<rect x="14" y="0" width="22" height="70" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.4"/>
+<rect x="0" y="10" width="14" height="6" rx="3" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.3"/>
+<rect x="36" y="20" width="14" height="6" rx="3" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.3"/>
+<rect x="0" y="32" width="14" height="6" rx="3" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.3"/>
+<rect x="36" y="44" width="14" height="6" rx="3" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.3"/>
+<rect x="0" y="56" width="14" height="6" rx="3" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.3"/>
+<g opacity="0.6">
+<circle cx="25" cy="40" r="0.8" fill="#85B7EB"/>
+<circle cx="22" cy="50" r="0.8" fill="#85B7EB"/>
+<circle cx="28" cy="55" r="0.8" fill="#85B7EB"/>
+</g>
+</g>
+<text x="95" y="125" font-family="serif" font-size="14" fill="#2D5F3F" text-anchor="middle" font-weight="500">Aeroponía</text>
+<text x="95" y="142" font-family="sans-serif" font-size="10" fill="#5F5E5A" text-anchor="middle">Torre con nebulizadores</text>
+</g>
+
+<g transform="translate(345, 260)">
+<rect x="0" y="0" width="190" height="160" rx="10" fill="#F5F1E8" stroke="#1A1A1A" stroke-width="0.5"/>
+<g transform="translate(70, 25)">
+<rect x="0" y="20" width="50" height="55" rx="3" fill="#85B7EB" opacity="0.5" stroke="#0C447C" stroke-width="0.5"/>
+<rect x="-2" y="18" width="54" height="6" rx="3" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.4"/>
+<rect x="20" y="14" width="10" height="6" rx="2" fill="#888780"/>
+<g transform="translate(15, -8)">
+<path d="M 12 22 Q 4 14 8 6 Q 12 4 14 8 Q 16 14 14 22 M 14 22 Q 22 14 18 6" fill="#7BA05B" stroke="#2D5F3F" stroke-width="0.4"/>
+</g>
+<line x1="25" y1="22" x2="25" y2="50" stroke="#F5F1E8" stroke-width="0.6"/>
+<line x1="22" y1="22" x2="22" y2="55" stroke="#F5F1E8" stroke-width="0.6"/>
+<line x1="28" y1="22" x2="28" y2="55" stroke="#F5F1E8" stroke-width="0.6"/>
+</g>
+<text x="95" y="125" font-family="serif" font-size="14" fill="#2D5F3F" text-anchor="middle" font-weight="500">Kratky</text>
+<text x="95" y="142" font-family="sans-serif" font-size="10" fill="#5F5E5A" text-anchor="middle">Sin bomba, sin electricidad</text>
+</g>
+
+<rect x="40" y="430" width="600" height="20" rx="6" fill="#EAF3DE" stroke="#2D5F3F" stroke-width="0.5"/>
+<text x="340" y="444" font-family="sans-serif" font-size="11" fill="#2D5F3F" text-anchor="middle" font-weight="500">Cada uno con sus pros, contras y nivel de complejidad</text>
+</svg>

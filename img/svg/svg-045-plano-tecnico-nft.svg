@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" viewBox="0 0 680 460" role="img" xmlns="http://www.w3.org/2000/svg"><title>Plano técnico sistema NFT</title>
+<text x="340" y="35" font-family="serif" font-size="17" fill="#1A1A1A" text-anchor="middle" font-weight="500">Plano técnico — Vista lateral con cotas</text>
+
+<line x1="80" y1="180" x2="600" y2="180" stroke="#888780" stroke-width="0.3" stroke-dasharray="2 2"/>
+<line x1="80" y1="220" x2="600" y2="220" stroke="#888780" stroke-width="0.3" stroke-dasharray="2 2"/>
+<line x1="80" y1="260" x2="600" y2="260" stroke="#888780" stroke-width="0.3" stroke-dasharray="2 2"/>
+
+<rect x="80" y="170" width="500" height="22" rx="11" fill="none" stroke="#1A1A1A" stroke-width="0.8"/>
+<rect x="80" y="210" width="500" height="22" rx="11" fill="none" stroke="#1A1A1A" stroke-width="0.8"/>
+<rect x="80" y="250" width="500" height="22" rx="11" fill="none" stroke="#1A1A1A" stroke-width="0.8"/>
+
+<g><circle cx="130" cy="181" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="190" cy="181" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="250" cy="181" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="310" cy="181" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="370" cy="181" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="430" cy="181" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="490" cy="181" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/></g>
+<g><circle cx="130" cy="221" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="190" cy="221" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="250" cy="221" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="310" cy="221" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="370" cy="221" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="430" cy="221" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="490" cy="221" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/></g>
+<g><circle cx="130" cy="261" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="190" cy="261" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="250" cy="261" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="310" cy="261" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="370" cy="261" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="430" cy="261" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/><circle cx="490" cy="261" r="3" fill="none" stroke="#1A1A1A" stroke-width="0.5"/></g>
+
+<line x1="600" y1="170" x2="600" y2="280" stroke="#854F0B" stroke-width="0.4"/>
+<line x1="80" y1="180" x2="80" y2="170" stroke="#854F0B" stroke-width="0.4"/>
+<line x1="80" y1="170" x2="600" y2="170" stroke="#854F0B" stroke-width="0.4" stroke-dasharray="2 2"/>
+<polygon points="80,170 87,168 87,172" fill="#854F0B"/>
+<polygon points="600,170 593,168 593,172" fill="#854F0B"/>
+<text x="340" y="160" font-family="sans-serif" font-size="11" fill="#854F0B" text-anchor="middle" font-weight="500">100 cm (39") — total</text>
+
+<text x="340" y="195" font-family="sans-serif" font-size="9" fill="#5F5E5A" text-anchor="middle">15 cm entre orificios</text>
+<text x="340" y="235" font-family="sans-serif" font-size="9" fill="#5F5E5A" text-anchor="middle">7 plantas por tubo</text>
+<text x="340" y="275" font-family="sans-serif" font-size="9" fill="#5F5E5A" text-anchor="middle">Diámetro orificio: 50mm</text>
+
+<line x1="60" y1="170" x2="60" y2="280" stroke="#854F0B" stroke-width="0.4"/>
+<line x1="60" y1="170" x2="50" y2="170" stroke="#854F0B" stroke-width="0.4"/>
+<line x1="60" y1="220" x2="50" y2="220" stroke="#854F0B" stroke-width="0.4"/>
+<line x1="60" y1="260" x2="50" y2="260" stroke="#854F0B" stroke-width="0.4"/>
+<text x="35" y="195" font-family="sans-serif" font-size="9" fill="#854F0B" text-anchor="middle">20cm</text>
+<text x="35" y="245" font-family="sans-serif" font-size="9" fill="#854F0B" text-anchor="middle">20cm</text>
+
+<rect x="200" y="320" width="280" height="50" rx="6" fill="#85B7EB" opacity="0.4" stroke="#0C447C" stroke-width="0.5"/>
+<text x="340" y="345" font-family="sans-serif" font-size="11" fill="#0C447C" text-anchor="middle" font-weight="500">TANQUE 30L · 60×40×30 cm</text>
+<text x="340" y="362" font-family="sans-serif" font-size="9" fill="#5F5E5A" text-anchor="middle">opaco · con tapa</text>
+
+<g transform="translate(80, 115)"><line x1="0" y1="0" x2="0" y2="55" stroke="#854F0B" stroke-width="1"/><polygon points="-3,52 0,58 3,52" fill="#854F0B"/><text x="-15" y="35" font-family="sans-serif" font-size="11" fill="#854F0B" text-anchor="middle" font-weight="500">3°</text></g>
+
+<g transform="translate(40, 380)"><rect x="0" y="0" width="600" height="60" rx="6" fill="#F5F1E8" stroke="#2D5F3F" stroke-width="0.4"/><text x="300" y="20" font-family="sans-serif" font-size="11" fill="#2D5F3F" text-anchor="middle" font-weight="500">Especificaciones técnicas</text>
+<text x="40" y="40" font-family="sans-serif" font-size="10" fill="#1A1A1A">Tubo: PVC 4" (10cm) sanitario blanco</text>
+<text x="40" y="55" font-family="sans-serif" font-size="10" fill="#1A1A1A">Inclinación: 2-3° (3cm de caída por metro)</text>
+<text x="350" y="40" font-family="sans-serif" font-size="10" fill="#1A1A1A">Bomba: 400-800 L/h, 5-10W</text>
+<text x="350" y="55" font-family="sans-serif" font-size="10" fill="#1A1A1A">Capacidad: 21 plantas (3 tubos × 7)</text></g>
+</svg>

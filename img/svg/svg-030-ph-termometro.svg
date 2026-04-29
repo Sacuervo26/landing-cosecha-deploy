@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" viewBox="0 0 680 420" role="img" xmlns="http://www.w3.org/2000/svg"><title>El pH como termómetro</title>
+
+<text x="340" y="35" font-family="serif" font-size="17" fill="#1A1A1A" text-anchor="middle" font-weight="500">El pH es como un termómetro: se controla, no se ignora</text>
+
+<g transform="translate(80, 90)">
+<rect x="20" y="0" width="40" height="240" rx="20" fill="#F5F1E8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="22" y="2" width="36" height="236" rx="18" fill="url(#phgrad2)"/>
+<defs>
+<linearGradient id="phgrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#0C447C"/>
+<stop offset="35%" stop-color="#85B7EB"/>
+<stop offset="40%" stop-color="#7BA05B"/>
+<stop offset="50%" stop-color="#7BA05B"/>
+<stop offset="55%" stop-color="#FAC775"/>
+<stop offset="100%" stop-color="#A32D2D"/>
+</linearGradient>
+</defs>
+<circle cx="40" cy="270" r="35" fill="#A32D2D" stroke="#5F5E5A" stroke-width="1"/>
+
+<line x1="65" y1="2" x2="78" y2="2" stroke="#444441" stroke-width="0.6"/>
+<text x="85" y="6" font-family="sans-serif" font-size="10" fill="#1A1A1A">14 — Hidróxido de sodio</text>
+<line x1="65" y1="36" x2="78" y2="36" stroke="#444441" stroke-width="0.6"/>
+<text x="85" y="40" font-family="sans-serif" font-size="10" fill="#1A1A1A">12</text>
+<line x1="65" y1="70" x2="78" y2="70" stroke="#444441" stroke-width="0.6"/>
+<text x="85" y="74" font-family="sans-serif" font-size="10" fill="#1A1A1A">10 — Lejía</text>
+<line x1="65" y1="103" x2="78" y2="103" stroke="#444441" stroke-width="0.6"/>
+<text x="85" y="107" font-family="sans-serif" font-size="10" fill="#1A1A1A">8 — Bicarbonato</text>
+<line x1="65" y1="120" x2="200" y2="120" stroke="#2D5F3F" stroke-width="2"/>
+<text x="85" y="116" font-family="sans-serif" font-size="11" fill="#2D5F3F" font-weight="500">7 — Agua pura</text>
+<rect x="65" y="125" width="350" height="35" rx="3" fill="#EAF3DE" stroke="#27500A" stroke-width="0.6"/>
+<text x="240" y="142" font-family="sans-serif" font-size="11" fill="#27500A" text-anchor="middle" font-weight="500">RANGO IDEAL: 5.5 - 6.5</text>
+<text x="240" y="156" font-family="sans-serif" font-size="9" fill="#27500A" text-anchor="middle">Las raíces absorben todos los nutrientes</text>
+<line x1="65" y1="170" x2="78" y2="170" stroke="#444441" stroke-width="0.6"/>
+<text x="85" y="174" font-family="sans-serif" font-size="10" fill="#1A1A1A">5 — Lluvia ácida</text>
+<line x1="65" y1="200" x2="78" y2="200" stroke="#444441" stroke-width="0.6"/>
+<text x="85" y="204" font-family="sans-serif" font-size="10" fill="#1A1A1A">4 — Café, vino</text>
+<line x1="65" y1="225" x2="78" y2="225" stroke="#444441" stroke-width="0.6"/>
+<text x="85" y="229" font-family="sans-serif" font-size="10" fill="#1A1A1A">3 — Limón, vinagre</text>
+<line x1="65" y1="238" x2="78" y2="238" stroke="#444441" stroke-width="0.6"/>
+<text x="85" y="242" font-family="sans-serif" font-size="10" fill="#1A1A1A">2 — Ácido estomacal</text>
+</g>
+
+<g transform="translate(450, 100)">
+<rect x="0" y="0" width="180" height="220" rx="8" fill="#F5F1E8" stroke="#2D5F3F" stroke-width="0.4"/>
+<text x="90" y="22" font-family="sans-serif" font-size="12" fill="#2D5F3F" text-anchor="middle" font-weight="500">Cómo lo controlas</text>
+<line x1="20" y1="32" x2="160" y2="32" stroke="#C9A961" stroke-width="0.4"/>
+
+<text x="20" y="55" font-family="sans-serif" font-size="11" fill="#1A1A1A" font-weight="500">Si pH alto (>6.5):</text>
+<text x="30" y="72" font-family="sans-serif" font-size="10" fill="#5F5E5A">Agregar pH Down</text>
+<text x="30" y="86" font-family="sans-serif" font-size="10" fill="#5F5E5A">(ácido fosfórico)</text>
+
+<text x="20" y="115" font-family="sans-serif" font-size="11" fill="#1A1A1A" font-weight="500">Si pH bajo (&lt;5.5):</text>
+<text x="30" y="132" font-family="sans-serif" font-size="10" fill="#5F5E5A">Agregar pH Up</text>
+<text x="30" y="146" font-family="sans-serif" font-size="10" fill="#5F5E5A">(hidróxido de potasio)</text>
+
+<line x1="20" y1="165" x2="160" y2="165" stroke="#C9A961" stroke-width="0.4"/>
+
+<text x="20" y="185" font-family="sans-serif" font-size="11" fill="#1A1A1A" font-weight="500">Medidor:</text>
+<text x="20" y="202" font-family="sans-serif" font-size="10" fill="#5F5E5A">$10-25 USD digital</text>
+</g>
+
+<rect x="40" y="350" width="600" height="55" rx="6" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.4"/>
+<text x="340" y="372" font-family="sans-serif" font-size="11" fill="#A32D2D" text-anchor="middle" font-weight="500">Si tu pH se sale del rango por DÍAS, las raíces no absorben aunque la solución esté llena de nutrientes.</text>
+<text x="340" y="392" font-family="sans-serif" font-size="10" fill="#5F5E5A" text-anchor="middle" font-style="italic">Es la causa #1 de plantas amarillas en hidroponía.</text>
+</svg>

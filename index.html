@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hidroponía desde Cero · El sistema completo para producir tus propios alimentos sin tierra. Más de 150 páginas de conocimiento aplicado.">
+<title>Cosecha en Casa · Hidroponía desde Cero</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ============ RESET & BASE ============ */
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --c-forest: #2D5F3F;
+    --c-forest-deep: #1F4A2F;
+    --c-forest-darker: #14321F;
+    --c-sage: #7BA05B;
+    --c-cream: #F5F1E8;
+    --c-cream-soft: #FAF7EE;
+    --c-gold: #C9A961;
+    --c-gold-soft: #D9BD7C;
+    --c-ink: #1A1A1A;
+    --c-ink-soft: #3D3D3D;
+    --c-muted: #6B6B6B;
+    --c-line: #D9D3C4;
+    
+    --f-display: 'Cormorant Garamond', Georgia, serif;
+    --f-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    --max-width: 1200px;
+    --content-width: 720px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--f-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--c-ink);
+    background: var(--c-cream-soft);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--c-gold);
+    color: var(--c-cream);
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* ============ TYPOGRAPHY ============ */
+  h1, h2, h3, h4 {
+    font-family: var(--f-display);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--c-forest);
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 6.5vw, 5.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 500;
+  }
+
+  p {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.75;
+    color: var(--c-ink-soft);
+  }
+
+  .eyebrow {
+    font-family: var(--f-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: var(--c-gold);
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    font-family: var(--f-display);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-style: italic;
+    color: var(--c-muted);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* ============ LAYOUT ============ */
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .container-narrow {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  section {
+    position: relative;
+    padding: clamp(80px, 12vh, 140px) 0;
+  }
+
+  /* ============ BANNER URGENCIA ============ */
+  .urgency-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 110;
+    background: linear-gradient(135deg, #B85A10 0%, #D87820 50%, #B85A10 100%);
+    color: #FFFFFF;
+    padding: 10px 16px;
+    text-align: center;
+    font-family: var(--f-body);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    box-shadow: 0 2px 12px rgba(184, 90, 16, 0.4);
+  }
+
+  .urgency-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .urgency-discount {
+    background: #FFFFFF;
+    color: #B85A10;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
+
+  .urgency-text {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .urgency-timer {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .urgency-timer-dot {
+    width: 8px;
+    height: 8px;
+    background: #FFD580;
+    border-radius: 50%;
+    animation: timerPulse 1s ease-in-out infinite;
+  }
+
+  @keyframes timerPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+
+  /* ============ NAVBAR ============ */
+  .navbar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 18px 0;
+    transition: all 0.4s ease;
+    background: rgba(31, 74, 47, 0.45);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.15);
+  }
+
+  .navbar.scrolled {
+    background: rgba(245, 241, 232, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.25);
+    padding: 12px 0;
+  }
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .nav-brand {
+    font-family: var(--f-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--c-cream);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transition: color 0.3s ease;
+  }
+
+  .navbar.scrolled .nav-brand {
+    color: var(--c-forest);
+  }
+
+  .nav-cta {
+    font-family: var(--f-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    padding: 12px 26px;
+    border: none;
+    background: linear-gradient(135deg, #E8A030 0%, #D87820 50%, #B85A10 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(216, 120, 32, 0.4),
+                0 0 0 1px rgba(255, 220, 150, 0.3) inset;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s ease;
+  }
+
+  .nav-cta:hover {
+    background: linear-gradient(135deg, #F0AD3D 0%, #E68528 50%, #C8651A 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(216, 120, 32, 0.55),
+                0 0 0 1px rgba(255, 220, 150, 0.5) inset;
+  }
+
+  .nav-cta:hover::before {
+    left: 100%;
+  }
+
+  .navbar.scrolled .nav-cta {
+    box-shadow: 0 4px 14px rgba(216, 120, 32, 0.45),
+                0 0 0 1px rgba(255, 220, 150, 0.3) inset;
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--c-forest-deep) 0%, var(--c-forest) 50%, var(--c-forest-deep) 100%);
+    color: var(--c-cream);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 160px 0 120px;
+  }
+
+  .hero-mini-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 32px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #E8A030 0%, #D87820 50%, #B85A10 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: var(--f-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(216, 120, 32, 0.45),
+                0 0 0 1px rgba(255, 220, 150, 0.4) inset;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+    animation: fadeInUp 0.9s 1s ease-out forwards;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-mini-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+    transition: left 0.7s ease;
+  }
+
+  .hero-mini-cta:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 14px 32px rgba(216, 120, 32, 0.6),
+                0 0 0 1px rgba(255, 220, 150, 0.55) inset;
+  }
+
+  .hero-mini-cta:hover::before {
+    left: 100%;
+  }
+
+  .hero-cta-below {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    opacity: 0;
+    animation: fadeInUp 0.9s 1.4s ease-out forwards;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 30%, rgba(201, 169, 97, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(123, 160, 91, 0.12) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-text .eyebrow {
+    color: var(--c-gold);
+    opacity: 0;
+    animation: fadeInUp 0.9s 0.3s ease-out forwards;
+  }
+
+  .hero h1 {
+    color: var(--c-cream);
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeInUp 0.9s 0.5s ease-out forwards;
+  }
+
+  .hero h1 em {
+    color: var(--c-gold);
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .hero-lead {
+    font-family: var(--f-display);
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    line-height: 1.5;
+    color: rgba(245, 241, 232, 0.85);
+    margin-bottom: 48px;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeInUp 0.9s 0.7s ease-out forwards;
+    max-width: 540px;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeInUp 0.9s 0.9s ease-out forwards;
+  }
+
+  .hero-meta-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-meta-num {
+    font-family: var(--f-display);
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--c-gold);
+    line-height: 1;
+  }
+
+  .hero-meta-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(245, 241, 232, 0.6);
+    margin-top: 8px;
+  }
+
+  .hero-image {
+    position: relative;
+    opacity: 0;
+    animation: fadeInScale 1.2s 0.6s ease-out forwards;
+  }
+
+  .hero-image-frame {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(201, 169, 97, 0.3),
+                0 0 60px rgba(232, 160, 48, 0.15);
+  }
+
+  .hero-image-frame::before {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(201, 169, 97, 0.5);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .hero-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 8s ease-out;
+  }
+
+  .hero-image-frame:hover img {
+    transform: scale(1.05);
+  }
+
+  .hero-scroll {
+    position: relative;
+    margin: 70px auto 0;
+    color: rgba(245, 241, 232, 0.65);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    animation: fadeInUp 1s 1.6s ease-out forwards;
+    z-index: 2;
+  }
+
+  .hero-scroll::after {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: var(--c-gold);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { transform: scaleY(0.3); opacity: 0.3; }
+    50% { transform: scaleY(1); opacity: 1; }
+  }
+
+  /* ============ SECCIÓN: PROBLEMA / ESPEJO ============ */
+  .mirror-section {
+    background: var(--c-cream-soft);
+    text-align: center;
+  }
+
+  .mirror-quote {
+    font-family: var(--f-display);
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    line-height: 1.4;
+    font-style: italic;
+    color: var(--c-forest);
+    max-width: 800px;
+    margin: 0 auto 60px;
+  }
+
+  .mirror-quote::before, .mirror-quote::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--c-gold);
+    margin: 32px auto;
+  }
+
+  .mirror-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .mirror-item {
+    padding: 24px 0;
+    border-top: 1px solid var(--c-line);
+  }
+
+  .mirror-item-num {
+    font-family: var(--f-display);
+    font-size: 1.2rem;
+    color: var(--c-gold);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .mirror-item-text {
+    font-family: var(--f-body);
+    font-size: 0.95rem;
+    color: var(--c-ink-soft);
+    line-height: 1.6;
+  }
+
+  /* ============ SECCIÓN: STATS ============ */
+  .stats-section {
+    background: var(--c-forest-deep);
+    color: var(--c-cream);
+    text-align: center;
+  }
+
+  .stats-section .eyebrow {
+    color: var(--c-gold);
+  }
+
+  .stats-section h2 {
+    color: var(--c-cream);
+    max-width: 800px;
+    margin: 0 auto 80px;
+  }
+
+  .stats-section h2 em {
+    color: var(--c-gold);
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .stat {
+    position: relative;
+  }
+
+  .stat:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    top: 20%;
+    bottom: 20%;
+    width: 1px;
+    background: rgba(201, 169, 97, 0.3);
+  }
+
+  .stat-num {
+    font-family: var(--f-display);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 600;
+    color: var(--c-gold);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    color: rgba(245, 241, 232, 0.85);
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* ============ SECCIÓN: SEIS PARTES ============ */
+  .journey-section {
+    background: var(--c-cream);
+  }
+
+  .journey-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 100px;
+  }
+
+  .part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 120px;
+    position: relative;
+  }
+
+  .part:nth-child(even) .part-img {
+    order: 2;
+  }
+
+  .part-num {
+    font-family: var(--f-display);
+    font-size: 0.9rem;
+    color: var(--c-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .part-num::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--c-gold);
+  }
+
+  .part h3 {
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+    margin-bottom: 24px;
+    color: var(--c-forest);
+  }
+
+  .part-desc {
+    margin-bottom: 32px;
+  }
+
+  .part-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .part-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(45, 95, 63, 0.08);
+    color: var(--c-forest);
+    font-size: 0.78rem;
+    font-weight: 500;
+    border-radius: 2px;
+  }
+
+  .part-img {
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(45, 95, 63, 0.18);
+    position: relative;
+  }
+
+  .part-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 1px rgba(201, 169, 97, 0.25);
+    pointer-events: none;
+  }
+
+  .part-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+  }
+
+  .part-img:hover img {
+    transform: scale(1.04);
+  }
+
+  /* ============ SECCIÓN: VISTA POR DENTRO ============ */
+  .preview-section {
+    background: var(--c-cream-soft);
+    overflow: hidden;
+  }
+
+  .preview-header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .preview-card {
+    background: white;
+    border-radius: 12px;
+    padding: 36px;
+    box-shadow: 0 4px 24px rgba(45, 95, 63, 0.08);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(217, 211, 196, 0.5);
+  }
+
+  .preview-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #E8A030, transparent);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+
+  .preview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(45, 95, 63, 0.18);
+    border-color: rgba(232, 160, 48, 0.3);
+  }
+
+  .preview-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .preview-card-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--c-gold);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .preview-card h4 {
+    font-family: var(--f-display);
+    font-size: 1.45rem;
+    color: var(--c-forest);
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+
+  .preview-card p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 20px;
+  }
+
+  .preview-svg-wrapper {
+    margin-top: auto;
+    background: linear-gradient(135deg, var(--c-cream-soft) 0%, #FBF8EE 100%);
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid var(--c-line);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+  }
+
+  .preview-card:hover .preview-svg-wrapper {
+    transform: scale(1.02);
+  }
+
+  .preview-svg-wrapper svg,
+  .preview-svg-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* ============ SECCIÓN: TIMELINE / TRANSFORMACIÓN ============ */
+  .transform-section {
+    background: linear-gradient(180deg, var(--c-cream) 0%, var(--c-cream-soft) 100%);
+  }
+
+  .transform-header {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .transform-header h2 em {
+    font-style: italic;
+    color: var(--c-gold);
+    font-weight: 600;
+  }
+
+  .timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, transparent 0%, var(--c-gold) 15%, var(--c-gold) 85%, transparent 100%);
+    transform: translateX(-0.5px);
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline-content {
+    text-align: right;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    grid-column: 3;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(even) .timeline-empty {
+    grid-column: 1;
+  }
+
+  .timeline-day {
+    font-family: var(--f-display);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 500;
+    color: var(--c-forest);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .timeline-day span {
+    color: var(--c-gold);
+    font-style: italic;
+  }
+
+  .timeline-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--c-gold);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .timeline-text {
+    font-family: var(--f-body);
+    font-size: 1rem;
+    color: var(--c-ink-soft);
+    line-height: 1.7;
+  }
+
+  .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background: var(--c-cream);
+    border: 2px solid var(--c-gold);
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+  }
+
+  .timeline-dot::before {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: var(--c-gold);
+    border-radius: 50%;
+  }
+
+  /* ============ SECCIÓN: AUTOR ============ */
+  .author-section {
+    background: var(--c-forest);
+    color: var(--c-cream);
+    text-align: center;
+  }
+
+  .author-section .eyebrow {
+    color: var(--c-gold);
+  }
+
+  .author-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .author-headline {
+    font-family: var(--f-display);
+    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+    color: var(--c-cream);
+    margin-bottom: 40px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  .author-headline em {
+    color: #F0AD3D;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .author-quote {
+    font-family: var(--f-display);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-style: italic;
+    line-height: 1.6;
+    color: rgba(245, 241, 232, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding: 32px 0;
+  }
+
+  .author-quote::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    font-size: 4rem;
+    color: var(--c-gold);
+    font-family: var(--f-display);
+    line-height: 1;
+    opacity: 0.5;
+  }
+
+  /* ============ CTA FINAL ============ */
+  .cta-section {
+    background: var(--c-cream);
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-image {
+    max-width: 320px;
+    margin: 0 auto 48px;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 30px 60px rgba(45, 95, 63, 0.2);
+  }
+
+  .cta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cta-section h2 {
+    margin-bottom: 24px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-section h2 em {
+    color: var(--c-gold);
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .cta-lead {
+    max-width: 580px;
+    margin: 0 auto 56px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--c-ink-soft);
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 22px 56px;
+    background: var(--c-forest);
+    color: var(--c-cream);
+    text-decoration: none;
+    font-family: var(--f-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    border-radius: 2px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--c-forest);
+  }
+
+  .cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(201, 169, 97, 0.3), transparent);
+    transition: left 0.6s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(45, 95, 63, 0.3);
+    background: var(--c-forest-deep);
+  }
+
+  .cta-button:hover::before {
+    left: 100%;
+  }
+
+  .cta-button .arrow {
+    transition: transform 0.4s ease;
+  }
+
+  .cta-button:hover .arrow {
+    transform: translateX(6px);
+  }
+
+  .cta-note {
+    margin-top: 32px;
+    font-size: 0.8rem;
+    color: var(--c-muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* ============ CTA INTENSO (in-line) ============ */
+  .cta-intense {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 48px;
+    background: linear-gradient(135deg, #E8A030 0%, #D87820 50%, #B85A10 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: var(--f-body);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    border-radius: 4px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 12px 32px rgba(216, 120, 32, 0.45),
+                0 0 0 1px rgba(255, 220, 150, 0.4) inset;
+    animation: ctaPulse 2.6s ease-in-out infinite;
+  }
+
+  @keyframes ctaPulse {
+    0%, 100% {
+      box-shadow: 0 12px 32px rgba(216, 120, 32, 0.45),
+                  0 0 0 1px rgba(255, 220, 150, 0.4) inset,
+                  0 0 0 0 rgba(232, 160, 48, 0.6);
+    }
+    50% {
+      box-shadow: 0 14px 38px rgba(216, 120, 32, 0.55),
+                  0 0 0 1px rgba(255, 220, 150, 0.5) inset,
+                  0 0 0 14px rgba(232, 160, 48, 0);
+    }
+  }
+
+  .cta-intense::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+    transition: left 0.7s ease;
+  }
+
+  .cta-intense:hover {
+    transform: translateY(-4px) scale(1.02);
+    background: linear-gradient(135deg, #F0AD3D 0%, #E68528 50%, #C8651A 100%);
+    box-shadow: 0 22px 50px rgba(216, 120, 32, 0.6),
+                0 0 0 1px rgba(255, 220, 150, 0.6) inset;
+    animation: none;
+  }
+
+  .cta-intense:hover::before {
+    left: 100%;
+  }
+
+  .cta-intense .arrow {
+    transition: transform 0.35s ease;
+    font-weight: 400;
+  }
+
+  .cta-intense:hover .arrow {
+    transform: translateX(8px);
+  }
+
+  /* Banner CTA entre secciones */
+  .cta-banner {
+    padding: 70px 0;
+    background: linear-gradient(135deg, var(--c-forest-deep) 0%, var(--c-forest) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(232, 160, 48, 0.15) 0%, transparent 60%),
+                radial-gradient(circle at 80% 50%, rgba(232, 160, 48, 0.12) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .cta-banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .cta-banner-text {
+    font-family: var(--f-display);
+    font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+    font-style: italic;
+    color: var(--c-cream);
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+
+  .cta-banner-text em {
+    color: #F0AD3D;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .cta-banner-note {
+    margin-top: 18px;
+    font-size: 0.75rem;
+    color: rgba(245, 241, 232, 0.6);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  /* Sticky CTA flotante (mobile-friendly) */
+  .cta-floating {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 90;
+    padding: 14px 26px;
+    background: linear-gradient(135deg, #E8A030 0%, #C8651A 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: var(--f-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border-radius: 50px;
+    box-shadow: 0 10px 28px rgba(216, 120, 32, 0.55);
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+
+  .cta-floating.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .cta-floating:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 16px 36px rgba(216, 120, 32, 0.7);
+  }
+
+  @media (max-width: 480px) {
+    .cta-intense {
+      padding: 18px 32px;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+    }
+    .cta-floating {
+      bottom: 16px;
+      right: 16px;
+      padding: 12px 20px;
+      font-size: 0.7rem;
+    }
+    .cta-banner {
+      padding: 50px 0;
+    }
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--c-forest-darker);
+    color: rgba(245, 241, 232, 0.7);
+    padding: 60px 0 40px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    font-family: var(--f-display);
+    font-size: 1.4rem;
+    color: var(--c-cream);
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .footer-tagline {
+    font-size: 0.85rem;
+    color: var(--c-gold);
+    font-style: italic;
+    letter-spacing: 0.05em;
+    margin-bottom: 32px;
+  }
+
+  .footer-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--c-gold);
+    margin: 32px auto;
+    opacity: 0.5;
+  }
+
+  .footer-copy {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: rgba(245, 241, 232, 0.4);
+  }
+
+  /* ============ ANIMATIONS ============ */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .stagger > * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .stagger.visible > *:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0.05s; }
+  .stagger.visible > *:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
+  .stagger.visible > *:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.25s; }
+  .stagger.visible > *:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.35s; }
+  .stagger.visible > *:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 0.45s; }
+  .stagger.visible > *:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 0.55s; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1024px) {
+    .preview-grid {
+      gap: 24px;
+    }
+    .stats-grid {
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: 60px;
+      text-align: center;
+    }
+
+    .hero-meta {
+      justify-content: center;
+    }
+
+    .hero-image {
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .hero-lead {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 30px;
+    }
+
+    .stat:not(:last-child)::after {
+      display: none;
+    }
+
+    .part {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin-bottom: 80px;
+    }
+
+    .part:nth-child(even) .part-img {
+      order: 0;
+    }
+
+    .part-img {
+      max-width: 400px;
+      margin: 0 auto;
+      aspect-ratio: 4 / 5;
+    }
+
+    .preview-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .preview-card {
+      padding: 28px 24px;
+    }
+
+    .preview-card-1, .preview-card-2,
+    .preview-card-3, .preview-card-4 {
+      grid-column: span 1;
+    }
+
+    .timeline::before {
+      left: 20px;
+    }
+
+    .timeline-item, .timeline-item:nth-child(even) {
+      grid-template-columns: 40px 1fr;
+      gap: 24px;
+      text-align: left;
+    }
+
+    .timeline-item .timeline-dot {
+      grid-column: 1;
+    }
+
+    .timeline-item .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+      grid-column: 2;
+      text-align: left;
+    }
+
+    .timeline-empty {
+      display: none;
+    }
+
+    .author-quote::before {
+      left: 0;
+      top: -20px;
+    }
+
+    .nav-cta {
+      padding: 10px 16px;
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container, .container-narrow {
+      padding: 0 18px;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .hero {
+      padding: 90px 0 50px;
+    }
+
+    .hero-meta {
+      gap: 24px;
+    }
+
+    .hero-meta-num {
+      font-size: 1.8rem;
+    }
+
+    .hero-meta-label {
+      font-size: 0.65rem;
+    }
+
+    .nav-content {
+      padding: 0 18px;
+    }
+
+    .nav-brand {
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+    }
+
+    .preview-card {
+      padding: 24px 20px;
+      border-radius: 10px;
+    }
+
+    .preview-card h4 {
+      font-size: 1.25rem;
+    }
+
+    .preview-svg-wrapper {
+      padding: 14px;
+    }
+
+    .cta-banner-text {
+      font-size: 1.25rem;
+      padding: 0 8px;
+    }
+
+    .cta-section h2 {
+      font-size: 1.75rem;
+    }
+
+    .cta-image {
+      max-width: 240px;
+      margin-bottom: 32px;
+    }
+
+    .mirror-quote {
+      font-size: 1.4rem;
+    }
+
+    .mirror-quote::before, .mirror-quote::after {
+      width: 40px;
+      margin: 24px auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- BANNER URGENCIA -->
+<div class="urgency-bar">
+  <div class="urgency-content">
+    <span class="urgency-discount">−50% HOY</span>
+    <span class="urgency-text">Termina la oferta en</span>
+    <span class="urgency-timer"><span class="urgency-timer-dot"></span><span id="countdown">15:00</span></span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-content">
+    <div class="nav-brand">Cosecha en Casa</div>
+    <a href="#empezar" class="nav-cta">Tener el ebook</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="eyebrow">Volumen 1 · Hidroponía</div>
+        <h1>Años de prueba y error,<br><em>condensados</em> en tus manos.</h1>
+        <p class="hero-lead">Actúa como un profesional sin haber estudiado uno. El método completo de cultivo en casa, en 150 páginas que te ahorran lo que a otros les tomó años aprender.</p>
+        <a href="#empezar" class="hero-mini-cta">
+          <span>Quiero ser parte del 20%</span>
+          <span class="arrow">→</span>
+        </a>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="hero-meta-num">150+</div>
+            <div class="hero-meta-label">Páginas</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-num">24</div>
+            <div class="hero-meta-label">Capítulos</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-num">6</div>
+            <div class="hero-meta-label">Etapas</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-frame">
+          <img src="img/imagen-01.jpg?v=2" alt="Sistema hidropónico NFT con lechugas en cocina moderna" loading="eager" />
+        </div>
+        <div class="hero-cta-below">
+          <a href="#empezar" class="cta-intense" style="padding: 18px 38px; font-size: 0.82rem;">
+            <span>Asegurar mi 50% de descuento</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">Sigue leyendo</div>
+  </div>
+</section>
+
+<!-- ESPEJO / PROBLEMA -->
+<section class="mirror-section">
+  <div class="container-narrow animate-on-scroll">
+    <div class="eyebrow">El verdadero problema</div>
+    <p class="mirror-quote">Has buscado información sobre hidroponía. Y te encontraste con caos: tutoriales sueltos, foros contradictorios, gurús que venden humo y videos sin un orden claro.</p>
+  </div>
+  <div class="container">
+    <div class="mirror-list stagger animate-on-scroll">
+      <div class="mirror-item">
+        <div class="mirror-item-num">01</div>
+        <p class="mirror-item-text">Lo intentaste con tierra y se te murieron las plantas. O peor: nunca te animaste.</p>
+      </div>
+      <div class="mirror-item">
+        <div class="mirror-item-num">02</div>
+        <p class="mirror-item-text">Ves a otros con sistemas funcionando y sientes que tú "no naciste con ese don".</p>
+      </div>
+      <div class="mirror-item">
+        <div class="mirror-item-num">03</div>
+        <p class="mirror-item-text">Cada vez que vas al mercado piensas: "esto no debería costar lo que cuesta".</p>
+      </div>
+      <div class="mirror-item">
+        <div class="mirror-item-num">04</div>
+        <p class="mirror-item-text">Tienes el espacio. Tienes el tiempo. Tienes la motivación. Solo te falta el método.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 1 (después del espejo / problema) -->
+<section class="cta-banner">
+  <div class="cta-banner-content animate-on-scroll">
+    <p class="cta-banner-text">Lo que te falta no es talento. Es el <em>orden correcto</em> de los pasos.</p>
+    <a href="https://hotmart.com/cosecha-en-casa-vol1" class="cta-intense">
+      <span>Quiero el método completo</span>
+      <span class="arrow">→</span>
+    </a>
+    <p class="cta-banner-note">Acceso inmediato · Garantía 60 días</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="animate-on-scroll">
+      <div class="eyebrow">Lo que aprendes adentro</div>
+      <h2>No es jardinería. Es <em>ingeniería biológica</em> aplicada en tu cocina.</h2>
+    </div>
+    <div class="stats-grid stagger animate-on-scroll">
+      <div class="stat">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Sistemas que existen<br>y cuál te conviene</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Errores que matan<br>al 80% de principiantes</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Términos técnicos<br>que tienes que dominar</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Plantas ideales<br>para tus primeros meses</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 2 (después de stats) -->
+<section class="cta-banner">
+  <div class="cta-banner-content animate-on-scroll">
+    <p class="cta-banner-text">Mientras lees esto, tu próxima cosecha <em>ya podría estar germinando</em>.</p>
+    <a href="https://hotmart.com/cosecha-en-casa-vol1" class="cta-intense">
+      <span>Empezar este fin de semana</span>
+      <span class="arrow">→</span>
+    </a>
+    <p class="cta-banner-note">Descarga digital · Lectura inmediata</p>
+  </div>
+</section>
+
+<!-- 6 PARTES -->
+<section class="journey-section">
+  <div class="container">
+    <div class="journey-intro animate-on-scroll">
+      <div class="eyebrow">El camino</div>
+      <h2>Seis etapas. Un solo método.</h2>
+      <p class="subtitle" style="margin-top: 16px;">De la primera duda a tu primera venta. Sin pasos saltados.</p>
+    </div>
+
+    <!-- PARTE 1 -->
+    <div class="part animate-on-scroll">
+      <div class="part-content">
+        <div class="part-num">Parte uno</div>
+        <h3>Fundamentos que nadie te explica bien</h3>
+        <p class="part-desc">Antes de comprar un solo tubo de PVC, hay cinco datos sobre la hidroponía que cambian completamente cómo la entiendes. Aquí los desmontamos sin tecnicismos vacíos. Lo que vas a saber al cerrar esta parte: qué es realmente la hidroponía, los 5 sistemas que existen y cuál te conviene a ti, las 12 palabras que tienes que dominar, y los 7 errores que destruyen el 80% de los intentos.</p>
+        <div class="part-tags">
+          <span class="part-tag">5 sistemas comparados</span>
+          <span class="part-tag">Glosario sin jerga</span>
+          <span class="part-tag">Errores fatales</span>
+        </div>
+      </div>
+      <div class="part-img">
+        <img src="img/imagen-02.jpg?v=2" alt="Raíces blancas en agua cristalina" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- PARTE 2 -->
+    <div class="part animate-on-scroll">
+      <div class="part-content">
+        <div class="part-num">Parte dos</div>
+        <h3>Tu primer sistema en un fin de semana</h3>
+        <p class="part-desc">Aquí dejas de leer y construyes. Plano paso a paso de un sistema NFT casero con materiales que consigues en cualquier ferretería. Y por si vives en un apartamento pequeño, también el sistema DWC compacto. Lista de materiales con precios reales, dónde ubicar el sistema según luz disponible, y cómo evitar los problemas estructurales más comunes desde el día uno.</p>
+        <div class="part-tags">
+          <span class="part-tag">Sistema NFT completo</span>
+          <span class="part-tag">DWC para apartamentos</span>
+          <span class="part-tag">Lista de materiales</span>
+        </div>
+      </div>
+      <div class="part-img">
+        <img src="img/imagen-03.jpg?v=2" alt="Materiales para construir sistema hidropónico" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- PARTE 3 -->
+    <div class="part animate-on-scroll">
+      <div class="part-content">
+        <div class="part-num">Parte tres</div>
+        <h3>La química que sí o sí debes dominar</h3>
+        <p class="part-desc">Esta es la parte que la mayoría salta. Y por eso la mayoría fracasa. No vas a necesitar entender química universitaria; vas a entender cuatro cosas: pH, EC, oxígeno disuelto, y nutrientes. Si dominas estos cuatro conceptos, dominas el 95% de la hidroponía. Tabla maestra de valores por cultivo y cómo ajustar todo según el tipo de agua de tu zona.</p>
+        <div class="part-tags">
+          <span class="part-tag">pH y EC explicados</span>
+          <span class="part-tag">Solución nutritiva</span>
+          <span class="part-tag">Calidad del agua</span>
+        </div>
+      </div>
+      <div class="part-img">
+        <img src="img/imagen-04.jpg?v=2" alt="Frascos de vidrio con soluciones nutritivas" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- PARTE 4 -->
+    <div class="part animate-on-scroll">
+      <div class="part-content">
+        <div class="part-num">Parte cuatro</div>
+        <h3>De la semilla a tu primera cosecha</h3>
+        <p class="part-desc">Ya tienes el sistema. Ya entiendes la química. Ahora viene la parte más bonita: ver crecer la vida. Las 8 plantas ideales para empezar (con días a cosecha, dificultad y rendimiento). Germinación —el paso que todos saltan—, trasplante sin matar la plántula, mantenimiento semanal de 15 minutos, y cómo cosechar para que el sistema siga produciendo continuamente.</p>
+        <div class="part-tags">
+          <span class="part-tag">Germinación correcta</span>
+          <span class="part-tag">Mantenimiento 15 min/semana</span>
+          <span class="part-tag">Cosecha continua</span>
+        </div>
+      </div>
+      <div class="part-img">
+        <img src="img/imagen-05.jpg?v=2" alt="Manos sosteniendo plántula con raíces visibles" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- PARTE 5 -->
+    <div class="part animate-on-scroll">
+      <div class="part-content">
+        <div class="part-num">Parte cinco</div>
+        <h3>Cuando las cosas se tuercen</h3>
+        <p class="part-desc">Por más que sigas todo al pie de la letra, en algún momento algo va a salir mal. Una hoja amarilla. Crecimiento lento. Algo que no te cuadra. Esta parte es tu guía de diagnóstico visual: qué te está diciendo cada síntoma de las hojas, las raíces y el agua. Plagas y enfermedades sin químicos sintéticos. Cómo resolver el 95% de los problemas antes de que escalen.</p>
+        <div class="part-tags">
+          <span class="part-tag">Diagnóstico visual</span>
+          <span class="part-tag">Sin químicos</span>
+          <span class="part-tag">Soluciones rápidas</span>
+        </div>
+      </div>
+      <div class="part-img">
+        <img src="img/imagen-07.jpg?v=2" alt="Detalle de hojas con manchas en luz natural" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- PARTE 6 -->
+    <div class="part animate-on-scroll">
+      <div class="part-content">
+        <div class="part-num">Parte seis</div>
+        <h3>De hobby a negocio</h3>
+        <p class="part-desc">Si llegas hasta aquí y produces más de lo que consumes, esta parte es para ti. Cómo escalar el sistema sin quebrarte económicamente. Vender excedentes y conseguir tu primer cliente recurrente. Costos reales, márgenes honestos y cómo fijar precios. Y un cierre que te abre la puerta a invernaderos, acuaponía, cultivo vertical y microgreens.</p>
+        <div class="part-tags">
+          <span class="part-tag">Escalar sin quebrar</span>
+          <span class="part-tag">Primer cliente</span>
+          <span class="part-tag">Próximos pasos</span>
+        </div>
+      </div>
+      <div class="part-img">
+        <img src="img/imagen-08.jpg?v=2" alt="Caja de cartón kraft con verduras hidropónicas frescas" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 3 (después de las 6 partes) -->
+<section class="cta-banner">
+  <div class="cta-banner-content animate-on-scroll">
+    <p class="cta-banner-text">Seis etapas. Un solo ebook. <em>Tu primera cosecha en 60 días</em>.</p>
+    <a href="https://hotmart.com/cosecha-en-casa-vol1" class="cta-intense">
+      <span>Tener el ebook ahora</span>
+      <span class="arrow">→</span>
+    </a>
+    <p class="cta-banner-note">+150 páginas · 24 capítulos · 129 ilustraciones</p>
+  </div>
+</section>
+
+<!-- VISTA POR DENTRO -->
+<section class="preview-section">
+  <div class="container">
+    <div class="preview-header animate-on-scroll">
+      <div class="eyebrow">Por dentro</div>
+      <h2>Este es el nivel de detalle.</h2>
+      <p class="subtitle" style="margin-top: 16px;">No es marketing. Son los diagramas, planos y tablas reales que vas a encontrar.</p>
+    </div>
+    <div class="preview-grid stagger animate-on-scroll">
+      <div class="preview-card preview-card-1">
+        <div class="preview-card-label">Capítulo 1 · Datos clave</div>
+        <h4>Los 5 datos que cambian cómo entiendes la hidroponía</h4>
+        <p>Sin tecnicismos. Sin marketing. Solo los números que demuestran por qué este método produce 30 veces más por metro cuadrado que el cultivo tradicional.</p>
+        <div class="preview-svg-wrapper">
+          <img src="img/svg/svg-010-5-datos-capitulo1.svg?v=2" alt="5 datos clave de la hidroponía" loading="lazy" />
+        </div>
+      </div>
+      <div class="preview-card preview-card-2">
+        <div class="preview-card-label">Capítulo 6 · Plano técnico</div>
+        <h4>Sistema NFT completo paso a paso</h4>
+        <p>Plano técnico con medidas exactas, materiales numerados y conexiones explicadas. Construido por arquitecto, validado en cocinas reales.</p>
+        <div class="preview-svg-wrapper">
+          <img src="img/svg/svg-045-plano-tecnico-nft.svg?v=2" alt="Plano técnico sistema NFT" loading="lazy" />
+        </div>
+      </div>
+      <div class="preview-card preview-card-3">
+        <div class="preview-card-label">Capítulo 9 · Química práctica</div>
+        <h4>pH y EC explicados como si tuvieras 10 años</h4>
+        <p>La química de la hidroponía sin química universitaria. Solo lo que tienes que saber para que tus plantas no se mueran de hambre.</p>
+        <div class="preview-svg-wrapper">
+          <img src="img/svg/svg-030-ph-termometro.svg?v=2" alt="Termómetro de pH" loading="lazy" />
+        </div>
+      </div>
+      <div class="preview-card preview-card-4">
+        <div class="preview-card-label">Capítulo 13 · Galería visual</div>
+        <h4>Las 8 plantas perfectas para empezar</h4>
+        <p>Con días a cosecha, dificultad real y rendimiento esperado. No tienes que adivinar qué sembrar primero. La tabla decide por ti.</p>
+        <div class="preview-svg-wrapper">
+          <img src="img/svg/svg-090-8-mejores-plantas.svg?v=2" alt="8 plantas perfectas para empezar" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TIMELINE / TRANSFORMACIÓN -->
+<section class="transform-section">
+  <div class="container">
+    <div class="transform-header animate-on-scroll">
+      <div class="eyebrow">Tu progreso real</div>
+      <h2>De la primera semilla a la <em>independencia</em>.</h2>
+      <p class="subtitle" style="margin-top: 16px;">Esta no es una promesa de marketing. Es la curva replicable de cientos de casos documentados.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-content">
+          <div class="timeline-day">Día <span>30</span></div>
+          <div class="timeline-label">Sistema funcionando</div>
+          <p class="timeline-text">Tu primer sistema hidropónico construido, calibrado y produciendo. Las primeras plántulas trasplantadas y creciendo.</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-empty"></div>
+      </div>
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-empty"></div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-day">Día <span>60</span></div>
+          <div class="timeline-label">Primera cosecha</div>
+          <p class="timeline-text">Tu primera lechuga, albahaca o lo que hayas sembrado. Cortada con tijeras de cocina, en tu sistema, con tus manos.</p>
+        </div>
+      </div>
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-content">
+          <div class="timeline-day">Día <span>90</span></div>
+          <div class="timeline-label">Inversión recuperada</div>
+          <p class="timeline-text">Has dejado de comprar verduras de hoja. Ya recuperaste al menos el 30% de la inversión inicial. El sistema produce continuo.</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-empty"></div>
+      </div>
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-empty"></div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-day">Mes <span>12</span></div>
+          <div class="timeline-label">Si decides escalar</div>
+          <p class="timeline-text">Vendes excedentes a vecinos y restaurantes locales. El sistema se paga a sí mismo y empieza a generar ingresos extra. Si decides hacerlo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 4 (después del timeline) -->
+<section class="cta-banner">
+  <div class="cta-banner-content animate-on-scroll">
+    <p class="cta-banner-text">Tu día 1 es <em>hoy</em>. O dentro de un año, cuando estés exactamente igual.</p>
+    <a href="https://hotmart.com/cosecha-en-casa-vol1" class="cta-intense">
+      <span>Empezar mi día 1</span>
+      <span class="arrow">→</span>
+    </a>
+    <p class="cta-banner-note">Garantía 60 días · Devolución sin preguntas</p>
+  </div>
+</section>
+
+<!-- MANIFIESTO -->
+<section class="author-section">
+  <div class="container">
+    <div class="author-content animate-on-scroll">
+      <div class="eyebrow">El manifiesto</div>
+      <h2 class="author-headline">No es un ebook de jardinería.<br>Es un <em>manual de independencia alimentaria</em>.</h2>
+      <p class="author-quote">Cada lechuga que produces en tu cocina es una decisión: dejar de pagar lo que puedes cultivar. Dejar de depender de cadenas de suministro que no controlas. Empezar a producir lo que comes con tus propias manos, en tu propio espacio, con tu propio método. Si llegaste hasta aquí, ya sabes lo que sigue.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section" id="empezar">
+  <div class="container animate-on-scroll">
+    <div class="cta-image">
+      <img src="img/imagen-09.jpg?v=2" alt="Plato de ensalada fresca con fresas en mesa de madera" loading="lazy" />
+    </div>
+    <div class="eyebrow">Tu próxima cosecha</div>
+    <h2>Plántulas hoy. Cosecha en <em>sesenta días</em>.<br>Independencia para toda la vida.</h2>
+    <p class="cta-lead">Más de 150 páginas. 24 capítulos. 9 imágenes editoriales. 129 ilustraciones técnicas. Un solo método. Tu cocina lista para producir.</p>
+    <a href="https://hotmart.com/cosecha-en-casa-vol1" class="cta-intense" style="padding: 24px 60px; font-size: 1rem;">
+      <span>Sí, quiero producir mis alimentos</span>
+      <span class="arrow">→</span>
+    </a>
+    <p class="cta-note">Acceso inmediato · Descarga digital · Garantía de 60 días</p>
+  </div>
+</section>
+
+<!-- CTA FLOTANTE -->
+<a href="https://hotmart.com/cosecha-en-casa-vol1" class="cta-floating" id="ctaFloating">
+  <span>Tener el ebook →</span>
+</a>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-brand">Cosecha en Casa</div>
+    <div class="footer-tagline">Diseñamos tus sueños</div>
+    <div class="footer-divider"></div>
+    <div class="footer-copy">© 2026 Cosecha en Casa · Todos los derechos reservados</div>
+  </div>
+</footer>
+
+<script>
+  // Countdown 15 min con persistencia (reinicia cada nueva sesión de navegación)
+  (function () {
+    const KEY = 'cosechaCountdownEnd';
+    const DURATION = 15 * 60 * 1000;
+    let endTime = parseInt(sessionStorage.getItem(KEY), 10);
+    if (!endTime || isNaN(endTime) || endTime - Date.now() > DURATION) {
+      endTime = Date.now() + DURATION;
+      sessionStorage.setItem(KEY, String(endTime));
+    }
+    const el = document.getElementById('countdown');
+    function tick() {
+      const ms = Math.max(0, endTime - Date.now());
+      const m = Math.floor(ms / 60000);
+      const s = Math.floor((ms % 60000) / 1000);
+      el.textContent = String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+      if (ms <= 0) {
+        clearInterval(timer);
+        el.textContent = 'EXPIRA YA';
+      }
+    }
+    tick();
+    const timer = setInterval(tick, 1000);
+  })();
+
+  // Navbar scroll behavior + CTA flotante
+  const navbar = document.getElementById('navbar');
+  const ctaFloating = document.getElementById('ctaFloating');
+  const ctaFinal = document.getElementById('empezar');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    if (scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    // Mostrar CTA flotante tras pasar el hero, ocultar al llegar al CTA final
+    const finalRect = ctaFinal.getBoundingClientRect();
+    const finalVisible = finalRect.top < window.innerHeight && finalRect.bottom > 0;
+    if (scrollY > window.innerHeight * 0.8 && !finalVisible) {
+      ctaFloating.classList.add('visible');
+    } else {
+      ctaFloating.classList.remove('visible');
+    }
+  });
+
+  // Intersection Observer for scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
